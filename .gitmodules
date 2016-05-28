@@ -1,0 +1,6 @@
+[submodule "nvim"]
+	path = nvim
+	url = https://github.com/seba2044/nvim.git
+[submodule "tmux/.tmux/plugins/tmp"]
+	path = tmux/.tmux/plugins/tmp
+	url = https://github.com/tmux-plugins/tpm
