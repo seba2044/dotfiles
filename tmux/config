@@ -21,8 +21,8 @@ set-option -g prefix C-a
 bind-key C-a send-prefix            
 
 # split panes using | and -
-bind | split-window -h
-bind - split-window -v
+bind -n M-a  split-window -h
+bind -n M-z split-window -v
 unbind '"'
 unbind %
 #send prefixs when ssh
@@ -45,15 +45,17 @@ unbind M-6
 unbind M-7
 unbind M-8
 unbind M-9
-bind -n M-1 select-window -t :1
-bind -n M-2 select-window -t :2
-bind -n M-3 select-window -t :3
-bind -n M-4 select-window -t :4
-bind -n M-5 select-window -t :5
-bind -n M-6 select-window -t :6
-bind -n M-7 select-window -t :7
-bind -n M-8 select-window -t :8
-bind -n M-9 select-window -t :9
+bind -n M-1 run '(tmux select-window -t :1 ||(tmux new-window -t :1 &&tmux select-window -t :1))'
+bind -n M-2 run '(tmux select-window -t :2 ||(tmux new-window -t :2 &&tmux select-window -t :2))'
+bind -n M-3 run '(tmux select-window -t :3 ||(tmux new-window -t :3 &&tmux select-window -t :3))'
+bind -n M-4 run '(tmux select-window -t :4 ||(tmux new-window -t :4 &&tmux select-window -t :4))'
+bind -n M-5 run '(tmux select-window -t :5 ||(tmux new-window -t :5 &&tmux select-window -t :5))'
+bind -n M-6 run '(tmux select-window -t :6 ||(tmux new-window -t :6 &&tmux select-window -t :6))'
+bind -n M-7 run '(tmux select-window -t :7 ||(tmux new-window -t :7 &&tmux select-window -t :7))'
+bind -n M-8 run '(tmux select-window -t :8 ||(tmux new-window -t :8 &&tmux select-window -t :8))'
+bind -n M-9 run '(tmux select-window -t :9 ||(tmux new-window -t :9 &&tmux select-window -t :9))'
+
+bind -n M-Q kill-pane
 
 bind R source-file ~/.tmux.conf
 set -g mouse on
