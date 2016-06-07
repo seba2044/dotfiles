@@ -33,4 +33,5 @@ bind '"\e[B": history-search-forward'
 stty -ixon
 PS1="\[\e[00;37m\][\[\e[0m\]\[\e[00;31m\]\u\[\e[0m\]\[\e[00;37m\]@\[\e[0m\]\[\e[00;32m\]\H\[\e[0m\]\[\e[00;37m\]]\[\e[0m\]\[\e[00;33m\]\W\[\e[0m\]\[\e[00;37m\]>>\[\e[0m\]\[\e[00;31m\]\\$\[\e[0m\]"
 export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOPATH/bin
