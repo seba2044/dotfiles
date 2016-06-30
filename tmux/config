@@ -21,10 +21,11 @@ set-option -g prefix M-a
 bind-key M-a send-prefix            
 
 # split panes using \ and -
+
+bind '\'  split-window -h
+bind '-' split-window -v
 bind -n M-'\'  split-window -h
 bind -n M-'-' split-window -v
-unbind '"'
-unbind %
 #send prefixs when ssh
 bind-key a send-prefix
 # Allows for faster key repetition
