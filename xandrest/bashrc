@@ -1,7 +1,6 @@
 #
 # ~/.bashrc
 #
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 shopt -s histappend
@@ -29,9 +28,9 @@ complete -cf man
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
 #kolorowanie dla usr 
-#PS1='[\u@\h \W]\$ ' 
-stty -ixon
 PS1="\[\e[00;37m\][\[\e[0m\]\[\e[00;31m\]\u\[\e[0m\]\[\e[00;37m\]@\[\e[0m\]\[\e[00;32m\]\H\[\e[0m\]\[\e[00;37m\]]\[\e[0m\]\[\e[00;33m\]\W\[\e[0m\]\[\e[00;37m\]>>\[\e[0m\]\[\e[00;31m\]\\$\[\e[0m\]"
+stty -ixon
+
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOPATH/bin
