@@ -21,5 +21,5 @@ PANEL_WM_NAME=bspwm_panel
 export PANEL_FIFO PANEL_HEIGHT PANEL_FONT PANEL_WM_NAME
 export PATH=$PATH:/home/seba/.config/bspwm
 1-disp.sh
-#exec i3
-exec bspwm
+exec i3
+#exec bspwm
