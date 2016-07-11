@@ -9,7 +9,7 @@ shopt -s checkwinsize
 #aliasy:
 alias pacman='sudo pacman'
 
-alias adb='/home/seba/android-sdk-linux/platform-tools/adb'
+#alias adb='/home/seba/android-sdk-linux/platform-tools/adb'
 #alias android='/home/seba/android-sdk-linux/tools/android'
 #alias studio='~/android-studio/bin/studio.sh'
 if [ -x /usr/bin/dircolors ]; then

@@ -1,3 +1,3 @@
 chromium&
-nvim-qt&
+(st -e tmux a||st -e tmux)&
 

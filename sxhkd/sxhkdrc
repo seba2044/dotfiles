@@ -10,6 +10,9 @@ super + shift + Return
 	(st -e tmux a || st -e tmux)
 super + Return 
         st
+#lock 
+super + Delete
+        i3lock -i ~/dotfiles/wallpapers/Z.B-1-2.png -t
 #menus
 ctrl + F1
         "tmux send '9menu -bg lightblue -label term -file ~/.config/9menu/term.9menu -popup -teleport -shell $(tty)' ENTER"
