@@ -156,7 +156,7 @@ bar {
 #9menu
 #bindcode Control+67 exec "tmux send '9menu -bg lightblue -label term -file ~/.config/9menu/term.9menu -popup -teleport' ENTER"
 #bindcode Control+68 exec "9menu -bg lightblue -label x1 -file ~/.config/9menu/x.9menu -popup -teleport"
-
-bindsym --whole-window $mod+button1 exec "tmux send '9menu -bg lightblue -label term -file ~/.config/9menu/term.9menu -popup -teleport' ENTER"
-bindsym --whole-window $mod+button2 exec "9menu -bg lightblue -label x1 -file ~/.config/9menu/x.9menu -popup -teleport"
+bindsym --whole-window button3 exec "9menu -bg lightblue -label x1 -file ~/.config/9menu/menu.9menu -popup -teleport"
+#bindsym --whole-window Control+button1 exec "tmux send '9menu -bg lightblue -label term -file ~/.config/9menu/term.9menu -popup -teleport' ENTER"
+#bindsym --whole-window Control+button2 exec "9menu -bg lightblue -label x1 -file ~/.config/9menu/x.9menu -popup -teleport"
 
